@@ -8,11 +8,36 @@
   </head>
   <body>
     <section>
-      <p class="advice-id">ADVICE #117</p>
+      <noscript>
+        <p>Oops... Something went wrong</p>
+        <p>Please turn on your JavaScript to read your advice.</p>
+      </noscript>
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <p class="advice-id">ADVICE_ID</p>
       <h2 class="advice">"ADVICE"</h2>
-      <img src="images/pattern-divider-desktop.svg" class="divider" alt="divider">
-      <button class="dice"><img src="images/icon-dice.svg" alt="dice" /></button>
+      <img
+        src="assets/pattern-divider-desktop.svg"
+        class="divider"
+        alt="divider"
+      />
+      <button class="dice">
+        <img src="assets/icon-dice.svg" alt="dice" />
+      </button>
     </section>
+
+    <div class="error">
+      <img src="assets/warning.svg" alt="error" />
+      <div>
+        <h2>Oops... Something went wrong</h2>
+        <p>It appears that the API is not working.</p>
+      </div>
+    </div>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>

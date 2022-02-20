@@ -26,6 +26,54 @@ body {
   align-items: center;
 }
 
+/* PRELOADER */
+
+.preloader {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.preloader span {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: preloader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.preloader span:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.preloader span:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.preloader span:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 section {
   background-color: var(--dark-grayish-blue);
   padding: 3em 5em;
@@ -36,16 +84,18 @@ section {
   box-shadow: var(--subtle-box-shadow);
 }
 
-h2 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5em;
+section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5em;
+  opacity: 0;
 }
 
 .advice-id {
   font-size: 1.1rem;
   letter-spacing: 0.3rem;
-  margin-bottom: .7em;
+  margin-bottom: 0.7em;
   color: var(--neon-green);
+  opacity: 0;
 }
 
 button {
@@ -68,8 +118,35 @@ button:hover {
 }
 
 .divider {
-    max-width: 21em;
-    margin-bottom: 1em;
+  max-width: 21em;
+  margin-bottom: 1em;
+}
+
+.error {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  background-color: var(--light-cyan);
+  color: var(--dark-grayish-blue);
+  width: 25em;
+  padding: 1.5em 1em;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.error h2 {
+  color: var(--grayish-blue);
+  font-size: 1.2rem;
+}
+
+.error p {
+  font-size: 1rem;
 }
 
 @media (max-width: 24em) {
