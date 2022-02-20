@@ -28,27 +28,21 @@ async function getData() {
 }
 
 async function renderData() {
+    advice.style.opacity = 0;
+    adviceId.style.opacity = 0;
+    preloader.style.opacity = 1;
     const slip = await getData();
-    setTimeout(() => {
-        setTimeout(() => {
-            preloader.style.opacity = 1;
-        }, 100)
-        hidePreloader();
-        advice.innerText = `"${slip.advice}"`;
-        adviceId.innerText = `ADVICE #${slip.id}`;
-        advice.style.opacity = 0;
-        adviceId.style.opacity = 0;
-    }, 200)
+    advice.innerText = `"${slip.advice}"`;
+    adviceId.innerText = `ADVICE #${slip.id}`;
+    hidePreloader();
 }
 
 function hidePreloader() {
     setTimeout(() => {
         preloader.style.opacity = 0;
-        setTimeout(() => {
-            adviceId.style.opacity = 1;
-            advice.style.opacity = 1;
-        }, 300)
-    }, 2000)
+        adviceId.style.opacity = 1;
+        advice.style.opacity = 1;
+    }, 500)
 }
 
 function errorMessage() {

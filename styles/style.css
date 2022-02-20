@@ -88,6 +88,7 @@ section h2 {
   font-size: 1.75rem;
   margin-bottom: 1.5em;
   opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 
 .advice-id {
@@ -96,6 +97,7 @@ section h2 {
   margin-bottom: 0.7em;
   color: var(--neon-green);
   opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 
 button {
@@ -106,7 +108,7 @@ button {
   border-radius: 50%;
   border: 0;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -136,7 +138,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1em;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
   opacity: 0;
 }
 
