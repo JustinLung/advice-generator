@@ -1,8 +1,8 @@
 # 🎉Advice Generator
 
 ## 📝 Description
-
-[🌐 Live Version]()
+![mockup](https://github.com/JustinLung/advice-generator/blob/main/docs/mockup.png?raw=true)
+[🌐 Live Version](https://justinlung.github.io/advice-generator/)
 
 ## Table of contents
 
@@ -28,21 +28,12 @@
 
 Installation with HTTPS
 ```
-git clone https://github.com/JustinLung/icy-penguins-nft-website.git
-cd icy-penguins-nft-website
+git clone https://github.com/JustinLung/advice-generator.git
+cd advice-generator
 ```
 
 Installation with SSH
 ```
-git@github.com:JustinLung/icy-penguins-nft-website.git
-cd icy-penguins-nft-website
+git@github.com:JustinLung/advice-generator.git
+cd advice-generator
 ```
-## 🔋 Usage
-After installing the project, install NPM
-```
-npm install
-```
-Now start a local server
-```
-npm run dev
-```"# advice-generator" 
